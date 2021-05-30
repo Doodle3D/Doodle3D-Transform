@@ -1,4 +1,4 @@
-# Doodle3D-App
+# Doodle3D-Transform
 Doodle3D Transform is a free and open-source web-app that makes designing in 3D easy and fun! Created with love by Casper, Peter, Rick, Nico, Jeroen, Simon, Donna and Arne in 2015-2017. With the support of 1,626 Kickstarter backers.
 
 In 2021 we updated Doodle3D Transform to work completely on the client-side. There is no server sided-code and/or user management anymore.
@@ -18,3 +18,7 @@ npm install    # Make sure you have installed NPM / NodeJS first
 npm run start
 # visit http://localhost:8080
 ```
+
+## Other important repositories
+* The core features of Doodle3D Transform: https://github.com/doodle3d/Doodle3D-Core
+* The GCODE slicer of Doodle3D Transform: https://github.com/doodle3d/Doodle3D-Slicer
