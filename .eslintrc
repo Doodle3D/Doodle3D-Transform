@@ -1,0 +1,33 @@
+{
+  "extends": "eslint-config-airbnb",
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "experimentalObjectRestSpread": true,
+    "modules": true,
+    "jsx": true
+  },
+  "rules": {
+    "comma-dangle": [1, "never"],
+    "no-else-return": 0,
+    "no-use-before-define": [2, "nofunc"],
+    "no-param-reassign": 0,
+    "no-var": 1,
+    "no-labels": 0,
+    "guard-for-in": 0,
+    "prefer-const": 0,
+    "no-unused-vars": 1,
+    "key-spacing": [1, {"beforeColon": false, "afterColon": true, "mode": "minimum"}],
+    "no-loop-func": 1,
+    "react/sort-comp": [0],
+    "max-len": [1, 110, 4],
+    "camelcase": 1,
+    "new-cap": 0
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "THREE": false
+  }
+}
