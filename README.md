@@ -14,7 +14,7 @@ https://doodle3d.com
 ```bash
 git clone git@github.com:Doodle3D/Doodle3D-Transform.git
 cd Doodle3D-Transform
-npm install    # Make sure you have installed NPM / NodeJS
+npm install    # Make sure you have installed NPM / NodeJS first
 npm run start
 # visit http://localhost:8080
 ```
