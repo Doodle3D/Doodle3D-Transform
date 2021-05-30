@@ -3,7 +3,7 @@
 ### Fixed
 
 ### Changed
-- Doodle3D Transform released as open source on https://github.com/doodle3d with MIT License.
+- Doodle3D Transform released as open source on https://github.com/doodle3d/Doodle3D-Transform with MIT License.
 - Removed the need for user accounts
 - Removed server sided storage of sketches
 - Removed server sided scripting
