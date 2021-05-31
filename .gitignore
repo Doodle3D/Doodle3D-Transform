@@ -86,3 +86,5 @@ app.env
 cordova/res/ios
 
 data/licenses.json
+
+upload.sh
