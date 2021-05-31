@@ -48,14 +48,15 @@ class About extends React.Component {
           </div>
           <img src={iconDoodle3D} className={classes.floatRight} />
           <p>Doodle3D Transform is a free and open-source web-app that makes designing in 3D easy and fun!
-          Created with love by Casper, Peter, Rick, Nico, Jeroen, Simon, Donna and Arne. With the support of 1,626 Kickstarter backers.</p>
-          <p>As of 2021-05-26 Doodle3D Transform is distributed under the MIT License. This gives everyone the freedoms to use Doodle3D Transform in any context: commercial or non-commercial, public or private, open or closed source.</p>
+          Created between 2015-2017 with love by Casper, Peter, Jeroen, Simon, Arne, Donna, Nico and Rick. With the support of 1,626 Kickstarter backers.</p>
+          <p>As of 2021-05-26 Doodle3D Transform is distributed as open source under the MIT License. This gives everyone the freedoms to use Doodle3D Transform in any context: commercial or non-commercial, public or private, open or closed source.</p>
           <p>
             <Link to={'/releasenotes'}>Release Notes</Link> | &nbsp; 
             <Link to={'/licenses'}>Licenses</Link> | &nbsp; 
             <Link to={'/help'}>Help</Link> | &nbsp; 
             <Link to={'/donate'}>Donate</Link> | &nbsp; 
-            <a target='_blank' href='https://github.com/doodle3d/'>Source code on Github</a>
+            <a target='_blank' href='https://twitter.com/doodle3d_app'>Twitter</a> | &nbsp; 
+            <a target='_blank' href='https://github.com/doodle3d/'>Github</a> 
           </p>
         </div>
       </SignUpPay>
