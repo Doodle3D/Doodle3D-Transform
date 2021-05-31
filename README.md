@@ -1,5 +1,5 @@
 # Doodle3D-Transform
-Doodle3D Transform is a free and open-source web-app that makes designing in 3D easy and fun! Created with love by Casper, Peter, Rick, Nico, Jeroen, Simon, Donna and Arne in 2015-2017. With the support of 1,626 Kickstarter backers.
+Doodle3D Transform is a free and open-source web-app that makes designing in 3D easy and fun! Created with love by Casper, Peter, Jeroen, Simon, Arne, Donna, Nico and Rick, in 2015-2017. With the support of 1,626 Kickstarter backers.
 
 In 2021 we updated Doodle3D Transform to work completely on the client-side. There is no server sided-code and/or user management anymore and no server sided storage of doodles.
 
