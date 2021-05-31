@@ -5,15 +5,6 @@ import * as actions from 'src/js/actions/index.js';
 import App from '@doodle3d/doodle3d-core/lib/components/App';
 import injectSheet from 'react-jss';
 import Popover from 'material-ui/Popover/Popover';
-import Badge from 'material-ui/Badge';
-// import btnPrintWiFiImageURL from 'img/export/btnPrintWiFi.png';
-// import btnSaveSTLImageURL from 'img/export/btnSaveSTL.png';
-// import btn3DHubsImageURL from 'img/export/btn3DHubs.png';
-// import btnShapewaysImageURL from 'img/export/btnShapeways.png';
-// import btnThingiverseImageURL from 'img/export/btnThingiverse.png';
-// import btnSketchFabImageURL from 'img/export/btnSketchFab.png';
-// import btnMyMiniFactoryImageURL from 'img/export/btnMyMiniFactory.png';
-// import btnPolar3DImageURL from 'img/export/btnPolar3D.png';
 import btnNewUrl from 'img/menu/btnNew.png';
 import btnOpenUrl from 'img/menu/btnOpen.png';
 import btnSaveUrl from 'img/menu/btnSave.png';
@@ -39,12 +30,6 @@ const button = {
 };
 
 const styles = {
-  badge: {
-    right: '-44px',
-    content: {
-      backgroundColor: 'red'
-    }
-  },
   buttonLeft: {
     '@media (max-width: 900px)': {
       backgroundColor: 'white'
@@ -79,6 +64,7 @@ const styles = {
     backgroundSize: '80px auto',
     width: '80px',
     height: '55px',
+    marginLeft: '-3px',
     ...button
   },
   save: {
@@ -92,6 +78,7 @@ const styles = {
     backgroundSize: '80px auto',
     width: '80px',
     height: '56px',
+    marginLeft: '-5px',
     ...button
   },
   settings: {
@@ -105,6 +92,7 @@ const styles = {
     backgroundSize: '77px auto',
     width: '77px',
     height: '57px',
+    marginLeft: '-3px',
     ...button
   },
   love: {
@@ -118,6 +106,8 @@ const styles = {
     backgroundSize: '77px auto',
     width: '77px',
     height: '57px',
+    marginLeft: '-10px',
+    marginTop: '-2px',
     ...button
   },
   help: {
@@ -131,6 +121,7 @@ const styles = {
     backgroundSize: '77px auto',
     width: '77px',
     height: '57px',
+    marginLeft: '-13px',
     ...button
   },
   export: {
