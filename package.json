@@ -110,7 +110,6 @@
     "serve-favicon": "^2.3.0",
     "serve-static": "^1.11.1",
     "shapeways": "^1.0.2",
-    "sharp": "^0.28.2",
     "shortid": "^2.2.6",
     "sofa-model": "^0.2.0",
     "spin.js": "^2.3.2",
