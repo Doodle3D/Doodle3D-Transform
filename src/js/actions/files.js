@@ -1,3 +1,4 @@
+import fileDialog from 'file-dialog';
 import { createUniqueName, sketchDataToDoc, THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT } from 'src/js/utils/saveUtils.js';
 import sketchDataToJSON from '@doodle3d/doodle3d-core/lib/shape/sketchDataToJSON';
 import { JSONToBlob } from '@doodle3d/doodle3d-core/lib/utils/binaryUtils';
@@ -78,9 +79,10 @@ export const downloadAllSketches = () => {
 
 export const openFileSelector = () => {
   return async (dispatch, getState) => {
-    const files = await window.showOpenFilePicker({ multiple: true });
-    for (let file of files) {
-      await loadFile(dispatch, file.name, () => file.getFile());
+    const files = await fileDialog({ multiple: true });
+    for (let i = 0; i < files.length; i ++) {
+        const file = files[i];
+        await loadFile(dispatch, file.name, () => Promise.resolve(file))
     }
   };
 

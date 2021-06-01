@@ -54,6 +54,7 @@
     "eslint-plugin-react": "^3.15.0",
     "executive": "^1.5.11",
     "fastclick": "^1.0.6",
+    "file-dialog": "^0.0.8",
     "file-loader": "^0.11.2",
     "file-saver": "^1.3.3",
     "form-data": "^2.1.1",
