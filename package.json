@@ -10,7 +10,7 @@
     "start-production": "NODE_ENV=production npm start",
     "lint": "eslint src/js",
     "dist:prepare": "npm run dist:licenses && mkdir -p dist && rimraf dist/*",
-    "dist:licenses": "node licenses-to-json.js . > data/licenses.json",
+    "dist:licenses": "mkdir -p data && node licenses-to-json.js . > data/licenses.json",
     "dist": "npm run dist:prepare && NODE_ENV=production webpack -p",
     "analyze": "NODE_ENV=production ANALYZE_BUNDLE=true webpack -p"
   },
