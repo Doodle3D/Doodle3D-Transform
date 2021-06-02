@@ -44,9 +44,6 @@ store.dispatch(actions.localStore.read());
 import actionWrapper from 'redux-action-wrapper';
 window.actions = actionWrapper(actions, store.dispatch);
 
-import * as CAL from 'cal';
-window.CAL = CAL;
-
 // Create an enhanced history that syncs navigation events with the store
 import { browserHistory, hashHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -79,7 +76,7 @@ import muiTheme from 'src/js/muiTheme.js';
 import Root from 'src/js/Root.js';
 import NotificationsWrapper from 'src/js/components/NotificationsWrapper.js';
 import BlockingSpinner from 'src/js/components/BlockingSpinner.js';
-import Prompt from 'redux-prompt/component';
+import Prompt from '@doodle3d/redux-prompt/lib/component';
 import { isWebGLAvailable } from '@doodle3d/doodle3d-core/lib/utils/webGLSupport.js';
 import bowser from 'bowser';
 

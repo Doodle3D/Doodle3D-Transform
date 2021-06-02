@@ -152,13 +152,7 @@ module.exports = {
       'img': path.resolve(__dirname, 'img/'),
       'workers': path.resolve(__dirname, 'workers/'),
       'server': path.resolve(__dirname, 'server/'),
-      'CHANGELOG.md': path.resolve(__dirname, 'CHANGELOG.md'),
-      'superlogin-client': '@doodle3d/superlogin-client',
-      'cal': '@doodle3d/cal',
-      'threejs-export-stl': '@doodle3d/threejs-export-stl',
-      'threejs-export-obj': '@doodle3d/threejs-export-obj',
-      'redux-batched-subscribe': '@doodle3d/redux-batched-subscribe',
-      'redux-prompt': `@doodle3d/redux-prompt/lib`
+      'CHANGELOG.md': path.resolve(__dirname, 'CHANGELOG.md')
     }
   },
   module: {
@@ -171,7 +165,7 @@ module.exports = {
         test: /\.css$/,
         exclude: /src\/css\/.+\.css$/,
         use: ['style-loader', 'css-loader']
-      }, { // css modules
+        }, { // css modules
         test: /src\/css\/.+\.css$/,
         use: ['style-loader', cssModuleLoader]
       }, {

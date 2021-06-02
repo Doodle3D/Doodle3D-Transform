@@ -6,7 +6,7 @@ import filesReducer, { currentName } from './filesReducer.js';
 import { reducer as formReducer } from 'redux-form';
 import { reducer as notificationsReducer } from 'react-notification-system-redux';
 import blockingSpinnerReducer from './blockingSpinnerReducer.js';
-import promptReducer from 'redux-prompt/reducer';
+import promptReducer from '@doodle3d/redux-prompt/lib/reducer';
 
 export default combineReducers({
   sketcher: sketcherReducer,

@@ -7,7 +7,7 @@ import createLogger from 'redux-logger';
 import { makePersistantMiddleware } from 'src/js/services/localStore.js';
 import { LOCAL_STORE_READ } from 'src/js/actions/localStore.js';
 import { platform } from 'src/js/constants/envs.js';
-import promptMiddleware from 'redux-prompt/middleware';
+import promptMiddleware from '@doodle3d/redux-prompt/lib/middleware';
 
 import debugOverlappingDispatches from './utils/debugOverlappingDispatches.js';
 

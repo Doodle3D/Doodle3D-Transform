@@ -7,7 +7,7 @@ import * as config from 'src/js/services/config.js';
 import { saveAs } from 'file-saver';
 import { routerActions as router } from 'react-router-redux';
 import * as notificationActions from 'react-notification-system-redux';
-import * as prompt from 'redux-prompt/actions';
+import * as prompt from '@doodle3d/redux-prompt/lib/actions';
 export const notification = {
   show: ({ position = 'tc', ...args }) => notificationActions.show({ position, ...args }),
   success: ({ position = 'tc', ...args }) => notificationActions.success({ position, ...args }),
