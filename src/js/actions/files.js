@@ -87,7 +87,10 @@ export const openFileSelector = () => {
   };
 
   async function loadFile(dispatch, fileName, getData) {
-    switch (fileName.match(/\.[0-9a-z]+$/i)[0].toUpperCase()) {
+    let matches = fileName.match(/\.[0-9a-z]+$/i);
+    if (!matches) return;
+
+    switch (matches[0].toUpperCase()) {
       case ".ZIP":
         let zip = await JSZip.loadAsync(await getData());
 
@@ -104,7 +107,7 @@ export const openFileSelector = () => {
         const sketchBlob = new Blob([sketchData], { type: 'application/json' });
 
         const doc = {
-          name: fileName,
+          name: fileName.replace(".doodle3d",""),
           appVersion: VERSION,
           _attachments: {
             img: { content_type: imgBlob.type, data: imgBlob },
