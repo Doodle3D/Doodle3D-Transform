@@ -39,14 +39,15 @@ const styles = {
     alignItems: 'center'
   },
   label: {
-    fontSize: '1.2rem',
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
+    fontSize: '1rem',
+    fontWeight: 'normal',
+    textTransform: 'none',
     display: 'box',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     boxOrient: 'vertical',
     wordWrap: 'break-word',
+    maxWidth: '200px',
     lineClamp: '2'
   },
   openContextMenu: {
