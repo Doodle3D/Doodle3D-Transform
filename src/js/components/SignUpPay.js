@@ -18,12 +18,6 @@ const styles = {
   },
   header: {
     gridColumn: '1 / 3'
-  },
-  logoutButton: {
-    top: '20px',
-    right: '20px',
-    position: 'absolute',
-    zIndex: 10000
   }
 };
 
@@ -56,7 +50,6 @@ SignUpPay.defaultProps = {
 SignUpPay.propTypes = {
   small: PropTypes.bool.isRequired,
   classes: PropTypes.object.isRequired,
-  logout: PropTypes.func.isRequired,
   error: PropTypes.sting,
   children: PropTypes.node,
 };
