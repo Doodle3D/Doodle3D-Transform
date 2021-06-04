@@ -60,12 +60,26 @@ export const downloadAllSketches = () => {
       attachments: true,
       binary: true
     }));
-    for (const { name, _attachments: { sketch: { data } }, updatedOn } of files) {
+    for (const { name, _attachments: { sketch: { data: sketchData }, img: { data: imgData } }, updatedOn } of files) {
       const uniqueName = createUniqueName(name || 'Doodle', names);
-
-      zip.file(`${uniqueName}.doodle3d`, data, { binary: true, date: new Date(updatedOn) });
+      const date = new Date(updatedOn);
+      zip.file(`sketches/${uniqueName}.doodle3d`, sketchData, { binary: true, date: date });
+      zip.file(`images/${uniqueName}.png`, imgData, { binary: true, date: date });
       names.push(uniqueName);
     }
+    zip.file(`index.html`, `
+      <!DOCTYPE html>
+      <html>
+      <head>
+      </head>
+      <body>
+        ${names.map(name =>
+          `<a href="sketches/${name}.doodle3d">
+            <img src="images/${name}.png" title="${name}" alt="${name}" width="200" />
+          </a>`
+        ).join("")}
+      </body>
+      </html>`, { binary: false });
     const dataBlob = await zip.generateAsync({ type: 'blob' });
     return dispatch({
       type: ALL_SKETCHES_EXPORT,
