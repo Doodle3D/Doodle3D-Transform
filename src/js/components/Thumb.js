@@ -82,16 +82,16 @@ const styles = {
     }
   },
   open: {
-    backgroundColor: 'lightblue'
+    backgroundColor: '#9fcaea'
   },
   remove: {
-    backgroundColor: 'red'
+    backgroundColor: '#e392b0'
   },
   cancel: {
-    backgroundColor: 'lightgreen'
+    backgroundColor: '#a5c88e'
   },
   download: {
-    backgroundColor: 'gold'
+    backgroundColor: '#ebe994'
   },
   active: {
     transform: 'translateY(0)'
