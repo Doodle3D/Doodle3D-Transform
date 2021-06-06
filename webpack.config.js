@@ -117,7 +117,7 @@ module.exports = {
         chunks: ['app'],
         meta: [
           { 'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8' },
-          { property: 'og:image', content: 'img/screenshot.png' },
+          { property: 'og:image', content: 'https://doodle3d.com/img/screenshot.png' },
           { property: 'og:type', content: 'website' },
           { property: 'og:url', content: 'https://doodle3d.com' },
           { name: 'apple-mobile-web-app-capable', content: 'yes' },
