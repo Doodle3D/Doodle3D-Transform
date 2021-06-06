@@ -120,8 +120,12 @@ export const openFileSelector = () => {
         const imgBlob = await generateThumb(sketcherState, THUMBNAIL_WIDTH, THUMBNAIL_HEIGHT, 'blob');
         const sketchBlob = new Blob([sketchData], { type: 'application/json' });
 
+        let name = /[^/]*$/.exec(fileName)[0]; //remove path
+        if (name) name = name.replace(".doodle3d",""); //remove extension
+        if (!name) name = fileName; //fallback to fileName if needed
+
         const doc = {
-          name: fileName.replace(".doodle3d",""),
+          name: name,
           appVersion: VERSION,
           _attachments: {
             img: { content_type: imgBlob.type, data: imgBlob },
