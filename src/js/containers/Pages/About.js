@@ -9,6 +9,7 @@ import textMarkup from 'src/jss/textMarkup.js';
 import SignUpPay from 'src/js/components/SignUpPay.js';
 import Dialog from 'material-ui/Dialog';
 import iconDoodle3D from 'img/apple-touch-icon-144x144-precomposed.png';
+import imgScreenshot from 'img/screenshot.png';
 
 // import createDebug from 'debug';
 // const debug = createDebug('d3d:popup:about');
