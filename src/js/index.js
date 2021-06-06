@@ -52,7 +52,7 @@ const history = syncHistoryWithStore(envs.platform === 'ios-app' ? hashHistory :
 window.onbeforeunload = event => {
   const state = store.getState();
 
-  if (state.files.current.unSavedData) {
+  if (state.files.current && state.files.current.unSavedData) {
     event.returnValue = 'You have unsaved work';
     return event.returnValue;
   }
