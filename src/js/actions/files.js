@@ -83,7 +83,7 @@ export const downloadAllSketches = () => {
     const dataBlob = await zip.generateAsync({ type: 'blob' });
     return dispatch({
       type: ALL_SKETCHES_EXPORT,
-      payload: dispatch(saveAs(dataBlob, 'My Doodles.zip'))
+      payload: dispatch(saveAs(dataBlob, 'Doodle3D-doodles-'+new Date().toISOString().split('T')[0]+'.zip'))
     }).catch(error => {
       dispatch(notification.error({ title: 'Saving doodle failed' }));
       throw error;
@@ -129,7 +129,7 @@ export const openFileSelector = () => {
           }
         };
 
-        await dispatch(actions.files.saveDoodle(fileName, doc, null));
+        await dispatch(actions.files.saveDoodle(name, doc, null));
         break;
     }
   }
