@@ -111,17 +111,22 @@ module.exports = {
         appMountId: 'app',
         inject: false,
         mobile: true,
-        minify: !devMode && { html5: true, collapseWhitespace: true },
+        minify: !devMode && { html5: true },
         hash: !devMode,
         favicon: 'favicon.ico',
         chunks: ['app'],
         meta: [
           { 'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8' },
+          { property: 'og:image', content: 'img/screenshot.png' },
+          { property: 'og:type', content: 'website' },
+          { property: 'og:url', content: 'https://doodle3d.com' },
           { name: 'apple-mobile-web-app-capable', content: 'yes' },
           { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
           { name: 'mobile-web-app-capable', content: 'yes' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, minimal-ui, user-scalable=no' }
-        ]
+        ],
+        headHtmlSnippet: '<link rel="shortcut icon" href="img/apple-touch-icon-144x144-precomposed.png" type="image/x-icon" />\
+          <link rel="apple-touch-icon" href="img/apple-touch-icon-144x144-precomposed.png">',
       }),
       new HTMLWebpackPlugin({
         template: require('html-webpack-template'),
